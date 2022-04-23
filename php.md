@@ -31,3 +31,9 @@ print_r($cachorro);
 //transformar php para javascript
 $mamifero=["nome",=>"sansao", "idade"=>12, "peso"=>45];
 echo json_encode($mamifero); echo"</br>;
+
+//transformar de javascript para php
+$mamifero1='{"nome":"sansao","idade":12, "peso":45}';
+
+$array = json_decode($mamifero1);
+print_r($array);
