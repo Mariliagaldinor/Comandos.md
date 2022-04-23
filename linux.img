@@ -1,0 +1,8 @@
+ifpk_124@ifpk124:~$ cd ~
+ifpk_124@ifpk124:~$ cd Projetos
+ifpk_124@ifpk124:~/Projetos$ nano html.index
+ifpk_124@ifpk124:~/Projetos$ cd php
+ifpk_124@ifpk124:~/Projetos/php$ touch index.php
+ifpk_124@ifpk124:~/Projetos/php$ code .
+ifpk_124@ifpk124:~/Projetos/php$ php -S localhost:8000
+[Sat Apr 23 10:47:44 2022] PHP 8.1.5 Development Server (http://localhost:8000) started
