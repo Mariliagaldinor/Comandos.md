@@ -15,3 +15,19 @@ echo str_replace(array(".","-"),"",$cpf);echo "</br>";
 echo strtolower("MARILIA"); echo "</br>";
 echo strtoupper("marilia"); echo "</br>";
 echo file_get_contents("aquivo.txt"); echo "</br>";
+
+class Mamifero{
+    public function __construct($nome, $idade, $sexo)
+    {
+        $this->nome=$nome;
+        $this->idade=$idade;
+        $this->sexo=$sexo;
+    }
+}
+$cachorro=new Mamifero("Sansao", 12.9, "M");
+
+print_r($cachorro);
+
+//transformar php para javascript
+$mamifero=["nome",=>"sansao", "idade"=>12, "peso"=>45];
+echo json_encode($mamifero); echo"</br>;
