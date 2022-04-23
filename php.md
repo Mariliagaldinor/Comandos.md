@@ -37,3 +37,12 @@ $mamifero1='{"nome":"sansao","idade":12, "peso":45}';
 
 $array = json_decode($mamifero1);
 print_r($array);
+
+
+$idade = 35;
+function maiorIdade($idade){
+    if($idade>=18){
+        echo "Sua idade é:".$idade. ".Você é maior de idade";
+        echo "Sua idade é:".$idade. ".Você é menor de idade";
+        }
+}
