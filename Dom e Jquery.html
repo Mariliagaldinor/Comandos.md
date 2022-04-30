@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dom e Jquery</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">OUTROS</h1>
+            <button class="btn">HTML</button>
+            <button class="btn">JAVASCRIPT</button>
+            <button id="ocultar">Exibir menos</button>
+
+        <div id="lista">
+            <h1>Linguagens</h1>
+            <ol>
+                <li>Java</li>
+                <li>Phyton</li>
+                <li>Delphi</li>
+                <li>PHP</li>
+            </ol>
+        </div>
+        <button id="exibir">Exibir mais</button>
+        <button id="mudarCorRed">Clique para o texto ficar vermelho</button>
+        <button id="mudarCorWhite">Clique para o texto ficar Branco</button>
+
+
+            <h1>Outros</h1>
+            <ol>    
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+            </ol>
+            <div class="lista">
+                Computador, internet, teclado, celular.
+            </div>
+            <div class="contatos">
+                <h3>E-mail</h3>
+                <input type="text" name="e-mail" id="" placeholder="Digite seu e-mail"> 
+                <h3>Telefone</h3>
+                <input type="tel" name="telefone" id="" placeholder="Digite seu telefone">
+            </div>
+        <div>
+            <button id="alerta">Clique aqui para exibir um alerta</button>
+           
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <!--<script>
+        $(document).ready(function(){
+            alert("jquery function");
+        });
+    </script>
+    -->
+    
+    <script>
+        $(document).ready(function(){
+            $("#alerta").click(function(){          
+                alert("Voce clicou no botão de alerta");
+             });
+        });
+    </script>
+    
+    <script>
+        $(document).ready(function(){
+            $("#ocultar").click(function(){
+                $("#lista").hide();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#exibir").click(function(){
+                $("#lista").show();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#mudarCorRed").click(function(){
+                $("#lista").addClass("vermelho");
+            });
+        });
+    </script>
+     <script>
+        $(document).ready(function(){
+            $("#mudarCorWhite").click(function(){
+                $("#lista").addClass("white");
+            });
+        });
+    </script>
+    <input type="text" id="rua">
+    <script>
+        $(document).ready(function(){
+            var cep = "69088620";
+            $.getJSON("https://viacep.com.br/ws/"+cep+"/json/", function(dados){
+                console.log(dados);
+                document.getElementById('rua').value = (dados.logradouro);
+                alert(dados.logradouro + " - " + dados.bairro + " - " +  dados.localidade + " - " + dados.uf + " - " +  dados.ibge );
+            });
+        });
+    </script>
+</body>
+</html>
