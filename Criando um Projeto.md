@@ -1,7 +1,11 @@
 
-1. composer create-project laravel/laravel nome
+1. Comando para criar o projeto 
 
-2. php artisan serve
+ composer create-project laravel/laravel nome
+
+2. executar servidor
+
+ php artisan serve
 
 
 3. criar o banco de dados
@@ -11,7 +15,7 @@ create database nome;
 show databases;
 
 
-4. Cirar tabela.
+4. Criar tabela.
 
 php artisan make:migration create_nome_table
 
