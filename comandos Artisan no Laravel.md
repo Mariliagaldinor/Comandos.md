@@ -1,6 +1,8 @@
 Criar uma nova controladora
 Para criar uma nova controladora, utilizamos o comando abaixo. Note que onde está NomeController, deve ser substituído pelo nome da sua controladora. O Sufixo Controller é uma obrigatoriedade.
 
+composer create-project laravel/laravel nome
+
 php artisan make:controller NomeController
 Caso deseje criar uma nova controladora com os métodos padrão para um CRUD, adicione o --resource, conforme mostra o exemplo a seguir.
 
