@@ -1,12 +1,7 @@
 
-1. Comando para criar o projeto 
+1. Comando para criar o projeto: composer create-project laravel/laravel nome
 
- composer create-project laravel/laravel nome
-
-2. executar servidor
-
- php artisan serve
-
+2. executar servidor: php artisan serve
 
 3. criar o banco de dados
 
@@ -15,13 +10,9 @@ create database nome;
 show databases;
 
 
-4. Criar tabela.
+4. Criar tabela: php artisan make:migration create_nome_table
 
-php artisan make:migration create_nome_table
-
-5. executar as migrations pendentes.
-
-php artisan migrate
+5. executar as migrations pendentes: php artisan migrate
 
 6. Vamos visualizar a tabela "migrations"
 
@@ -66,3 +57,16 @@ select * from migrations;
 7. Descricao da tabela.
 
 mysql > describe nomedatabela;
+
+
+Criar a model: php artisan make:model nome
+
+Criar a seeder: php artisan make:seeder nome
+
+Executar a seeder pendente: php artisan db:seed
+
+Criar a request: php artisan make:request nome
+
+Criar o controller: php artisan make:controller nome
+
+Autorizar o acesso a pasta public: php artisan storage:link
