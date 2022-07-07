@@ -70,3 +70,10 @@ Criar a request: php artisan make:request nome
 Criar o controller: php artisan make:controller nome
 
 Autorizar o acesso a pasta public: php artisan storage:link
+
+Editar o arquivo config/app.php
+
+'timezone' => 'America/Manaus',
+'locale' => 'pt-br',
+'fallback_locale' => 'pt_br',
+'faker_locale' => 'pt_BR',
